@@ -11,6 +11,8 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
+    // remove extra plus signs
+    // Extra plussed need for conversion
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
